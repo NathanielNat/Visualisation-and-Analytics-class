@@ -3,7 +3,8 @@ from datetime import datetime
 
 from matplotlib import pyplot as plt
 
-filename = 'data/sitka_weather_2018_simple.csv'
+basepath = 'data_files/'
+filename = basepath +'/the_csv_file_format/data/sitka_weather_2018_simple.csv'
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
